@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#text-email-login {
+  top: 10%;
+  font-weight: bold;
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 1;
+}
