@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 
-<html lang="id">
+<html>
     <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <title>Login | PESANKU - Pemerintah Provinsi Lampung</title>
         <link rel="stylesheet" href="style.css">
-        <script src="popup.js"></script>
     </head>
 
     <body>
         <header>
-            <div id="text-email-login" class="position-absolute">
-                <p class="first-text-left">Hai,</p>
-                <p class="first-text-left-2">Selamat Datang di <strong>Pesanku</strong></p>
+            <div id="login-container">
+                <div id="text-email-login">
+                    <p class="first-text-left">Hai,</p>
+                    <p class="first-text-left-2">Selamat Datang di <strong>Pesanku</strong></p>
+                </div>
             </div>
         </header>
-
-        <explain>
-            <div class="big-chat-icon">
-            </div>
+        <div class="wrapper">
+            <div class="big-chat-icon"></div>
             <div id="text-service-explanation">
                 <p class="long-text">
                     Layanan surat elektronik untuk Perangkat Daerah dan Pegawai Negeri Sipil
-                    di lingkungan instansi Pemerintah Provinsi Lampung sesuai dengan Surat Edaran 
-                    Menteri Negara Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Nomor 06 Tahun 2013.
+                        di lingkungan instansi Pemerintah Provinsi Lampung sesuai dengan Surat Edaran 
+                        Menteri Negara Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Nomor 06 Tahun 2013.
                 </p>
             </div>
-        </explain>
-        
-        <main>
-            <!-- <div class="blue-circle">
-                <img src="assets/elips.png";>
-            </div> -->
-
-            <div class="sign-up">
-                <div class="sign-up-2">
-                    <div></div>
-                    <p>Daftar</p>
-                </div>
-            </div>
-            
-            <div class="sign-in">
-                <div id="sign-in-2">
-                    <p>Masuk</p>
-                </div>
-            </div>
-
             <div id="forms">
                 <div class="vector">
                     <img src="assets/vector-1.png";>
                 </div>
 
-                <div class="fill"> </div>
+                <div class="fill"> </div> 
 
                 <div class="subtitle">
                     <p>Masuk</p>
@@ -61,43 +41,34 @@
 
                 <input type="password" id="pw" placeholder="Kata Sandi">
 
-                <!-- <input type="checkbox" id="visibility-pw" onclick="showPassword()">
-                    <p>Tampilkan kata sandi</p>
-                        <script>
-                            function showPassword(){
-                                var a = document.getElementById("pw");
-                                if (a.type == "password"){
-                                    a.type == "text";
-                                } else {
-                                    a.type == "password";
-                                }
-                            }
-                        </script> -->
-        
                 <input type="submit" value="Let's Go!">
                 
 
                 <div class="forgot-password">
                     <p><a>Lupa Kata Sandi?</a></p>
-                    <!-- <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup()"></div>
-                        <p><a href="popup.js/togglePopup()">Lupa Kata Sandi?</a></p>
-                    </div> -->
                 </div>
 
                 <div class="number-of-ASN">
                     <p>Jumlah ASN yang Teregistrasi : 15.757 Akun</p>
                 </div>
             </div>
-            </main>
-
-            <footer>
-                <div id="copyright">
-                    <p> Copyright &copy 2021 - Pemerintah Provinsi Lampung </p>
-                    <p> Dinas Komunikasi Informatika dan Statistik </p>
+        </div>
+        <div id="complement">
+            <div class="sign-up">
+                <div class="sign-up-2">
+                    <p>Daftar</p>
                 </div>
-            </footer>
-        
+            </div>
+            <div class="sign-in">
+                <div id="sign-in-2">
+                    <p>Masuk</p>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <p> Copyright &copy 2021 - Pemerintah Provinsi Lampung </p>
+            <p> Dinas Komunikasi Informatika dan Statistik </p>
+        </div>
     </body>
+
 </html>

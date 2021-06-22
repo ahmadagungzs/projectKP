@@ -9,8 +9,8 @@ html {
   height: 100%;
   margin: 0;
   background-image: url("assets/chat-icon.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  /* background-repeat: no-repeat; */
+  background-position: center;
   background-size: cover;
   display: block;
 }
@@ -18,7 +18,7 @@ html {
 #text-email-login {
   top: 10%;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 15px;
   max-width: 600px;
   line-height: 1;
 }
@@ -34,7 +34,7 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 64px;
   line-height: 84px;
 }
 
@@ -49,7 +49,7 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 42px;
 }
 
@@ -58,8 +58,8 @@ html {
   position: absolute;
   width: 750px;
   height: 84px;
-  left: 148px;
-  top: 784px;
+  left: 10%;
+  top: 85%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -96,7 +96,7 @@ html {
   position: absolute;
   width: 200px;
   height: 40px;
-  left: 1380px;
+  left: 70%;
   top: 122px;
   background: #f2f2f2;
   border-radius: 5px;
@@ -106,8 +106,8 @@ html {
   position: absolute;
   width: 50px;
   height: 16.8px;
-  left: 125px;
-  top: 10px;
+  left: 62%;
+  top: 20%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -122,7 +122,7 @@ html {
   position: absolute;
   width: 105px;
   height: 40px;
-  left: 1380px;
+  left: 70%;
   top: 122px;
   background: #29a7c2;
   box-shadow: 0px 0px 10px rgba(47, 192, 247, 0.15);
@@ -134,14 +134,13 @@ html {
   position: absolute;
   width: 55px;
   height: 16.8px;
-  left: 25px;
-  top: 10px;
+  left: 25%;
+  top: 8px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
   line-height: 21px;
 }
 
@@ -149,8 +148,8 @@ html {
   position: absolute;
   width: 379px;
   height: 593px;
-  left: 1200px;
-  top: 235px;
+  left: 70%;
+  top: 220px;
   background: #ffffff;
   box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.08);
   border-radius: 25px;
@@ -238,24 +237,6 @@ input[type="submit"]:hover {
   background-color: #0f768d;
 }
 
-/* input[type="checkbox"],
-#visibility-pw {
-  position: absolute;
-  width: 30px;
-  height: 50px;
-  left: 40px;
-  top: 330px;
-  padding: 12px 20px;
-  margin: 8px 0;
-
-  font-size: 18px;
-  display: inline-block;
-  border: 1px solid rgb(204, 204, 204);
-  border-radius: 2px;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-} */
-
 .forgot-password {
   position: absolute;
   width: 123px;
@@ -274,10 +255,10 @@ input[type="submit"]:hover {
 
 #copyright {
   position: absolute;
-  width: 452px;
+  width: 379px;
   height: 38px;
-  left: 1214px;
-  top: 920px;
+  left: 70.5%;
+  top: 90%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -302,62 +283,107 @@ input[type="submit"]:hover {
   color: #091d30;
 }
 
-.popup .overlay {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  display: none;
+@media only screen and (max-width: 624px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  html {
+    height: 1043px;
+  }
+
+  #text-service-explanation {
+    display: none !important;
+  }
+  #forms {
+    top: 37%;
+    left: 21%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .text-email-login {
+    display: block;
+    top: 37%;
+    left: 2%;
+    top: 10%;
+  }
+
+  .sign-up {
+    top: 30%;
+    left: 10%;
+  }
+
+  .sign-in {
+    top: 30%;
+    left: 10%;
+  }
+
+  #copyright {
+    top: 110%;
+    left: 21%;
+  }
+
+  .first-text-left {
+    top: 8%;
+    left: 21%;
+  }
+
+  .first-text-left-2 {
+    top: 17%;
+    left: 21%;
+  }
 }
 
-.popup .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  background: #ffffff;
-  width: 95%;
-  max-width: 500px;
-  height: 250px;
-  z-index: 2;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.popup .close-btn {
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 30px;
-  height: 30px;
-  background: #222;
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 600px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-}
+  html {
+    height: 1043px;
+  }
 
-.popup .active .overlay {
-  display: block;
-}
+  .sign-up {
+    top: 30%;
+    left: 27%;
+  }
+  .sign-in {
+    top: 30%;
+    left: 27%;
+  }
+  .first-text-left {
+    top: 8%;
+    left: 20%;
+  }
 
-.popup.active .content {
-  transition: all 300ms ease-in-out;
-  transform: translate(-50%, -50%) scale(1);
-}
+  .first-text-left-2 {
+    top: 17%;
+    left: 20%;
+  }
+  #forms {
+    top: 40%;
+    left: 21%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #copyright {
+    top: 110%;
+    left: 22%;
+  }
 
-a {
-  text-transform: capitalize;
-}
-
-@media screen {
+  #text-service-explanation {
+    display: none !important;
+  }
+  .big-chat-icon {
+    display: none !important;
+  }
+  .login-container .text-email-login {
+    display: block;
+  }
 }
